@@ -3,55 +3,55 @@ import os
 
 dicionario = {
     '1)': {
-        'pergunta': 'Escreva aqui sua pergunta: ',
-        'respostas': {
-            'a': 'Escolha1',
-            'b': 'Escolha2',
-            'c': 'Escolha3',
-            'd': 'Escolha4',
+        'question': 'Write here your question:  ',
+        'answers': {
+            'a': 'Choice1',
+            'b': 'Choice2',
+            'c': 'Choice3',
+            'd': 'Choice4',
         },
-        'resposta_correta': 'a',  # Coloque a resposta correta
+        'right_answer': 'a',  # Put the right answer
     },
     '2)': {
-        'pergunta': 'Escreva aqui sua pergunta: ',
-        'respostas': {
-            'a': 'Escolha1',
-            'b': 'Escolha2',
-            'c': 'Escolha3',
-            'd': 'Escolha4',
+        'question': 'Write here your question:  ',
+        'answers': {
+            'a': 'Choice1',
+            'b': 'Choice2',
+            'c': 'Choice3',
+            'd': 'Choice4',
         },
-        'resposta_correta': 'd',  # Coloque a resposta correta
+        'right_answer': 'd',  # Put the right answer
     },
     '3)': {
-        'pergunta': 'Escreva aqui sua pergunta: ',
-        'respostas': {
-            'a': 'Escolha1',
-            'b': 'Escolha2',
-            'c': 'Escolha3',
-            'd': 'Escolha4',
+        'question': 'Write here your question:  ',
+        'answers': {
+            'a': 'Choice1',
+            'b': 'Choice2',
+            'c': 'Choice3',
+            'd': 'Choice4',
         },
-        'resposta_correta': 'a',  # Coloque a resposta correta
+        'right_answer': 'a',  # Put the right answer
     },
     '4)': {
-        'pergunta': 'Escreva aqui sua pergunta: ',
-        'respostas': {
-            'a': 'Escolha1',
-            'b': 'Escolha2',
-            'c': 'Escolha3',
-            'd': 'Escolha4',
+        'question': 'Write here your question:  ',
+        'answers': {
+            'a': 'Choice1',
+            'b': 'Choice2',
+            'c': 'Choice3',
+            'd': 'Choice4',
         },
-        'resposta_correta': 'c',  # Coloque a resposta correta
+        'right_answer': 'c',  # Put the right answer
     },
     '5)': {
-        'pergunta': 'Escreva aqui sua pergunta: ',
-        'respostas': {
-            'a': 'Escolha1',
-            'b': 'Escolha2',
-            'c': 'Escolha3',
-            'd': 'Escolha4',
-            'e': 'Escolha5'
+        'question': 'Write here your question:  ',
+        'answers': {
+            'a': 'Choice1',
+            'b': 'Choice2',
+            'c': 'Choice3',
+            'd': 'Choice4',
+            'e': 'Choice5'
         },
-        'resposta_correta': 'd',  # Coloque a resposta correta
+        'right_answer': 'd',  # Put the right answer
     }
 }
 
@@ -73,34 +73,34 @@ class Color:
 
 os.system('cls' if os.name == 'nt' else 'clear')
 print()
-inicio = "Seja bem vindx ao questionario!\n"
+inicio = "Welcome to the Quiz!\n"
 print(Color.BOLD, Color.PINK, Color.UNDERLINE + f"{inicio}" + Color.END)
 r = Color.RED
 n = Color.END
 b = Color.BOLD
 result = 0
 for mq, ma in dicionario.items():
-    print(Color.BOLD, Color.CYAN + f"{mq}: {ma['pergunta']}" + Color.END)
+    print(Color.BOLD, Color.CYAN + f"{mq}: {ma['question']}" + Color.END)
     print(Color.BOLD, Color.CYAN + "Answers:" + Color.END)
     print()
-    for aq, aa in ma['respostas'].items():
+    for aq, aa in ma['answers'].items():
         print(Color.GREEN + f"[{aq}]: {aa}" + Color.END)
         print()
     answer = input(f"{Color.YELLOW}Wich is the answer? {r}{b}")
-    if answer.lower() == ma['resposta_correta']:
-        print(f"{Color.CYAN}Opaa, você acertou!!!")
-        print(f"{b}{Color.CYAN}Indo para a proxima pergunta...{n}")
+    if answer.lower() == ma['right_answer']:
+        print(f"{Color.CYAN}Wow, you got it right!!!")
+        print(f"{b}{Color.CYAN}Going to the next question...{n}")
         time.sleep(2)
         result += 1
     else:
-        print(f"{Color.CYAN}Infelizmente não foi dessa vez, você errou!")
-        print(f"A resposta certa era {Color.RED}{ma['resposta_correta'].upper()} {n}")
-        print(f"{b}{Color.CYAN}Indo para a proxima pergunta...{n}")
+        print(f"{Color.CYAN}Ops, unfortunately it wasn't this time!")
+        print(f"The right answer was {Color.RED}{ma['right_answer'].upper()} {n}")
+        print(f"{b}{Color.CYAN}Going to the next question...{n}")
         time.sleep(2)
     os.system('cls' if os.name == 'nt' else 'clear')
 qtd_q = len(dicionario)
 p = result / qtd_q * 100
-print(f"{Color.GREEN}Você acertou {r}{result}/{len(dicionario)}{Color.GREEN} questões{n}")
-print(f"{Color.GREEN}A sua porcentagem foi de {r}{p}%")
+print(f"{Color.GREEN}You got {r}{result}/{len(dicionario)}{Color.GREEN} questions right{n}")
+print(f"{Color.GREEN}Its percentage is {r}{p}%")
 time.sleep(5)
 exit()
