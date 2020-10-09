@@ -5,51 +5,51 @@ dicionario = {
     '1)': {
         'question': 'Write here your question:  ',
         'answers': {
-            'a': 'Choice1',
-            'b': 'Choice2',
-            'c': 'Choice3',
-            'd': 'Choice4',
+            'a': 'Choice 1',
+            'b': 'Choice 2',
+            'c': 'Choice 3',
+            'd': 'Choice 4',
         },
         'right_answer': 'a',  # Put the right answer
     },
     '2)': {
         'question': 'Write here your question:  ',
         'answers': {
-            'a': 'Choice1',
-            'b': 'Choice2',
-            'c': 'Choice3',
-            'd': 'Choice4',
+            'a': 'Choice 1',
+            'b': 'Choice 2',
+            'c': 'Choice 3',
+            'd': 'Choice 4',
         },
         'right_answer': 'd',  # Put the right answer
     },
     '3)': {
         'question': 'Write here your question:  ',
         'answers': {
-            'a': 'Choice1',
-            'b': 'Choice2',
-            'c': 'Choice3',
-            'd': 'Choice4',
+            'a': 'Choice 1',
+            'b': 'Choice 2',
+            'c': 'Choice 3',
+            'd': 'Choice 4',
         },
         'right_answer': 'a',  # Put the right answer
     },
     '4)': {
         'question': 'Write here your question:  ',
         'answers': {
-            'a': 'Choice1',
-            'b': 'Choice2',
-            'c': 'Choice3',
-            'd': 'Choice4',
+            'a': 'Choice 1',
+            'b': 'Choice 2',
+            'c': 'Choice 3',
+            'd': 'Choice 4',
         },
         'right_answer': 'c',  # Put the right answer
     },
     '5)': {
         'question': 'Write here your question:  ',
         'answers': {
-            'a': 'Choice1',
-            'b': 'Choice2',
-            'c': 'Choice3',
-            'd': 'Choice4',
-            'e': 'Choice5'
+            'a': 'Choice 1',
+            'b': 'Choice 2',
+            'c': 'Choice 3',
+            'd': 'Choice 4',
+            'e': 'Choice 5'
         },
         'right_answer': 'd',  # Put the right answer
     }
