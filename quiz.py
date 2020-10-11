@@ -1,7 +1,7 @@
 import time
 import os
 
-dicionario = {
+dictionary = {
     '1)': {
         'question': 'Write here your question:  ',
         'answers': {
@@ -79,7 +79,7 @@ r = Color.RED
 n = Color.END
 b = Color.BOLD
 result = 0
-for mq, ma in dicionario.items():
+for mq, ma in dictionary.items():
     print(Color.BOLD, Color.CYAN + f"{mq}: {ma['question']}" + Color.END)
     print(Color.BOLD, Color.CYAN + "Answers:" + Color.END)
     print()
@@ -98,9 +98,9 @@ for mq, ma in dicionario.items():
         print(f"{b}{Color.CYAN}Going to the next question...{n}")
         time.sleep(2)
     os.system('cls' if os.name == 'nt' else 'clear')
-qtd_q = len(dicionario)
+qtd_q = len(dictionary)
 p = result / qtd_q * 100
-print(f"{Color.GREEN}You got {r}{result}/{len(dicionario)}{Color.GREEN} questions right{n}")
+print(f"{Color.GREEN}You got {r}{result}/{len(dictionary)}{Color.GREEN} questions right{n}")
 print(f"{Color.GREEN}Its percentage is {r}{p}%")
 time.sleep(5)
 exit()
