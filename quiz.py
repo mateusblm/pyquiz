@@ -73,8 +73,8 @@ class Color:
 
 os.system('cls' if os.name == 'nt' else 'clear')
 print()
-inicio = "Welcome to the Quiz!\n"
-print(Color.BOLD, Color.PINK, Color.UNDERLINE + f"{inicio}" + Color.END)
+start = "Welcome to the Quiz!\n"
+print(Color.BOLD, Color.PINK, Color.UNDERLINE + f"{start}" + Color.END)
 r = Color.RED
 n = Color.END
 b = Color.BOLD
